@@ -1,0 +1,197 @@
+export const mainCategories = [
+  { id: "for-you", label: "Gợi ý cho bạn" },
+  { id: "popular", label: "Phổ biến nhất" },
+  { id: "vr", label: "Sách mới VR" },
+  { id: "featured", label: "Sách tiêu biểu" },
+];
+
+export const quickGenres = [
+  { id: "detective", label: "Trinh thám" },
+  { id: "horror", label: "Kinh dị" },
+  { id: "romance", label: "Tình cảm" },
+  { id: "fantasy", label: "Kỳ ảo" },
+  { id: "business", label: "Kinh tế" },
+  { id: "sci-fi", label: "Viễn tưởng" },
+];
+
+export const discoverFilters = [
+  { id: "all", label: "Tất cả" },
+  { id: "romance", label: "Ngôn tình" },
+  { id: "mystery", label: "Kỳ bí" },
+  { id: "thriller", label: "Huyền bí" },
+  { id: "science", label: "Khoa học" },
+];
+
+export const recommendedBooks = [
+  {
+    id: "midnight-library",
+    title: "The Midnight Library",
+    author: "Matt Haig",
+    badge: "FULL",
+    badgeClass: "badge--success",
+    cover: "cover--forest",
+  },
+  {
+    id: "beyond-stars",
+    title: "Beyond the Stars",
+    author: "Elena Thorne",
+    badge: "NEW",
+    badgeClass: "badge--info",
+    cover: "cover--paper",
+  },
+  {
+    id: "silent-patient",
+    title: "The Silent Patient",
+    author: "Alex Michaelides",
+    badge: "HOT",
+    badgeClass: "badge--warn",
+    cover: "cover--sand",
+  },
+  {
+    id: "secrets-soul",
+    title: "Secrets of the Soul",
+    author: "Sarah J. Miller",
+    badge: "6 CHƯƠNG",
+    badgeClass: "badge--info",
+    cover: "cover--shell",
+  },
+  {
+    id: "ancient-whispers",
+    title: "Ancient Whispers",
+    author: "Liam Henderson",
+    badge: "COMING",
+    badgeClass: "badge--warn",
+    cover: "cover--stone",
+  },
+];
+
+export const discoverBooks = [
+  {
+    id: "secrets-soul",
+    title: "Secrets of the Soul",
+    author: "Sarah J. Miller",
+    badge: "6 CHƯƠNG",
+    badgeClass: "badge--warn",
+    cover: "cover--sunset",
+    action: "Mượn sách",
+    tag: "all",
+  },
+  {
+    id: "ancient-whispers",
+    title: "Ancient Whispers",
+    author: "Liam Henderson",
+    badge: "FULL - 12 CHƯƠNG",
+    badgeClass: "badge--success",
+    cover: "cover--stone",
+    action: "Đặt trước",
+    tag: "all",
+  },
+  {
+    id: "last-kingdom",
+    title: "The Last Kingdom",
+    author: "Bernard Cornwell",
+    badge: "TOP",
+    badgeClass: "badge--info",
+    cover: "cover--paper",
+    action: "Mượn sách",
+    tag: "mystery",
+  },
+  {
+    id: "echoes-time",
+    title: "Echoes of Time",
+    author: "Jessica Chen",
+    badge: "NEW",
+    badgeClass: "badge--info",
+    cover: "cover--mint",
+    action: "Mượn sách",
+    tag: "science",
+  },
+];
+
+export const libraryBooks = [
+  {
+    id: "minimal-cover",
+    title: "Minimal Cover",
+    author: "Sofia Yung",
+    badge: "NEW",
+    badgeClass: "badge--success",
+    cover: "cover--mint",
+    action: "Đọc tiếp",
+    tab: "favorites",
+  },
+  {
+    id: "minimal-cover-2",
+    title: "Minimal Cover",
+    author: "Celine Marsh",
+    badge: "HOT",
+    badgeClass: "badge--warn",
+    cover: "cover--sand",
+    action: "Đọc tiếp",
+    tab: "active",
+  },
+  {
+    id: "secret-stars",
+    title: "Secret of the Stars",
+    author: "Eli Osprey",
+    badge: "FAV",
+    badgeClass: "badge--info",
+    cover: "cover--paper",
+    action: "Mở sách",
+    tab: "favorites",
+  },
+  {
+    id: "minimal-natural",
+    title: "Minimal Natural Cover",
+    author: "Hana Mori",
+    badge: "NEW",
+    badgeClass: "badge--success",
+    cover: "cover--forest",
+    action: "Đọc tiếp",
+    tab: "active",
+  },
+];
+
+export const historyItems = [
+  {
+    id: "loan-8821",
+    code: "#LIB-8821",
+    statusLabel: "Returned",
+    statusClass: "status--returned",
+    title: "The Midnight Library",
+    author: "Matt Haig",
+    borrowed: "Oct 12, 2023",
+    returned: "Oct 26, 2023",
+    cover: "cover--paper",
+    actions: [
+      { id: "borrow-again", label: "Borrow Again", variant: "primary" },
+      { id: "write-review", label: "Write Review", variant: "ghost" },
+    ],
+  },
+  {
+    id: "loan-9012",
+    code: "#LIB-9012",
+    statusLabel: "In Progress",
+    statusClass: "status--progress",
+    title: "Project Hail Mary",
+    author: "Andy Weir",
+    borrowed: "Nov 05, 2023",
+    due: "Nov 19, 2023",
+    cover: "cover--sand",
+    actions: [{ id: "renew", label: "Renew Book", variant: "ghost" }],
+  },
+  {
+    id: "loan-4451",
+    code: "#LIB-4451",
+    statusLabel: "Returned",
+    statusClass: "status--returned",
+    title: "Tomorrow, and Tomorrow...",
+    author: "Gabrielle Zevin",
+    borrowed: "Sep 01, 2023",
+    returned: "Sep 15, 2023",
+    cover: "cover--mint",
+    actions: [
+      { id: "borrow-again", label: "Borrow Again", variant: "primary" },
+      { id: "write-review", label: "Write Review", variant: "ghost" },
+    ],
+  },
+];
