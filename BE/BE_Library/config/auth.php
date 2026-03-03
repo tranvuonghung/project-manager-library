@@ -40,6 +40,18 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'admins',
+        ],
+        'nguoi_muon' => [
+            'driver' => 'session',
+            'provider' => 'nguoi_muon',
+        ],
+        'nha_xuat_ban' => [
+            'driver' => 'session',
+            'provider' => 'nha_xuat_ban',
+        ],
     ],
 
     /*

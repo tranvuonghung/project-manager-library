@@ -2,13 +2,13 @@
 
 namespace App\Models;
 
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Notifications\Notifiable;
-class Sach extends Authenticatable
+
+class Sach extends Model
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    use HasFactory;
+
     protected $table = 'sachs';
 
     protected $fillable = [
@@ -22,4 +22,23 @@ class Sach extends Authenticatable
         'id_nha_xuat_ban',
         'id_tac_gia',
     ];
+    public function theLoai()
+    {
+        return $this->belongsTo(TheLoai::class, 'id_the_loai');
+    }
+
+    public function tacGia()
+    {
+        return $this->belongsTo(TacGia::class, 'id_tac_gia');
+    }
+
+    public function nhaXuatBan()
+    {
+        return $this->belongsTo(NhaXuatBan::class, 'id_nha_xuat_ban');
+    }
+
+    public function keSach()
+    {
+        return $this->belongsTo(KeSach::class, 'id_ke_sach');
+    }
 }

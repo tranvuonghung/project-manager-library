@@ -2,14 +2,12 @@
 
 namespace App\Models;
 
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Notifications\Notifiable;
 
-class ChiTietMuon extends Authenticatable
+class ChiTietMuon extends Model
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    use HasFactory;
 
     protected $table = 'chi_tiet_muons';
 
@@ -20,4 +18,15 @@ class ChiTietMuon extends Authenticatable
         'id_sach',
         'id_phieu_muon',
     ];
+
+    public $timestamps = false;
+    public function sach()
+    {
+        return $this->belongsTo(Sach::class, 'id_sach');
+    }
+
+    public function phieuMuon()
+    {
+        return $this->belongsTo(PhieuMuon::class, 'id_phieu_muon');
+    }
 }

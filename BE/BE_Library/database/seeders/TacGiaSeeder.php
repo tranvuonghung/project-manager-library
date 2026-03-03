@@ -14,8 +14,16 @@ class TacGiaSeeder extends Seeder
     public function run(): void
     {
         TacGia::insert([
-            ['ten_tac_gia' => 'Nguyen Nhat Anh'],
-            ['ten_tac_gia' => 'To Hoai'],
+            ['ten_tac_gia' => 'Nguyễn Nhật Ánh'],
+            ['ten_tac_gia' => 'Tô Hoài'],
+            ['ten_tac_gia' => 'Paulo Coelho'],
+            ['ten_tac_gia' => 'Dale Carnegie'],
+            ['ten_tac_gia' => 'Rosie Nguyễn'],
+            ['ten_tac_gia' => 'J.K. Rowling'],
+            ['ten_tac_gia' => 'Arthur Conan Doyle'],
+            ['ten_tac_gia' => 'Yuval Noah Harari'],
+            ['ten_tac_gia' => 'James Clear'],
+            ['ten_tac_gia' => 'Napoleon Hill'],
         ]);
     }
 }
